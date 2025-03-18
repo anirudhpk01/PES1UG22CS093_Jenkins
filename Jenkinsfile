@@ -11,13 +11,15 @@ pipeline {
     stage('Build'){
       steps{
         build 'PES1UG22CS093-1'
-        sh 'g++ ./main/hello_again.cpp -o -output'
+        sh 'g++ ./main/hello_again.cpp -o ./main/output'
+
       }
     }
         stage('Test'){
       steps{
         
-        sh './main/output'
+       sh './main/output'
+
       }
     }
      stage('Deploy'){
