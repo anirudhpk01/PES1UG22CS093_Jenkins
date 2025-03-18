@@ -11,7 +11,7 @@ pipeline {
     stage('Build'){
       steps{
         build 'PES1UG22CS093-1'
-        sh 'g++ hello.cpp -o -output'
+        sh 'g++ hello_again.cpp -o -output'
       }
     }
         stage('Test'){
